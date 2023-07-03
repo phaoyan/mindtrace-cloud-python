@@ -1,0 +1,5 @@
+FROM mindtrace-python-base
+COPY . .
+ENV PYTHONPATH=$PYTHONPATH:/app
+EXPOSE 34984
+CMD ["python", "mindtrace-spider-python/app.py"]

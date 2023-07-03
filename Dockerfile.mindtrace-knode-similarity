@@ -1,0 +1,5 @@
+FROM mindtrace-python-base
+COPY . .
+ENV PYTHONPATH=$PYTHONPATH:/app
+EXPOSE 31595
+CMD ["python", "mindtrace-knode-similarity/app.py"]

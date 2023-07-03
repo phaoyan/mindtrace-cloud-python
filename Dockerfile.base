@@ -1,0 +1,7 @@
+#用于安装环境的dockerfile，命名为mindtrace-python-base
+FROM python:3.10.7-slim
+WORKDIR /app
+RUN pip install \
+    --upgrade \
+    --no-cache-dir \
+    -r requirements.txt
